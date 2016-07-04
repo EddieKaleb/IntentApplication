@@ -19,23 +19,27 @@ public class PrimeiraActivity extends Activity {
         setContentView(R.layout.activity_primeira);
     }
     @Override
-    protected void onResume(){
+    protected void onResume() {
         super.onResume();
+        Log.i("OnResume","Está no onResume");
     }
 
     @Override
-    protected void onPause(){
-        super.onResume();
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i("OnDestroy","onDestroy");
     }
 
     @Override
-    protected void onStop(){
-        super.onResume();
+    protected void onPause() {
+        super.onPause();
+        Log.i("OnPause","onPause");
     }
 
     @Override
-    protected void onDestroy(){
-        super.onResume();
+    protected void onStop() {
+        super.onStop();
+        Log.i("OnStop","onStop");
     }
 
     public void exibirMsg(View view){
