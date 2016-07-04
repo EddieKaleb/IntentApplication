@@ -18,6 +18,25 @@ public class PrimeiraActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_primeira);
     }
+    @Override
+    protected void onResume(){
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause(){
+        super.onResume();
+    }
+
+    @Override
+    protected void onStop(){
+        super.onResume();
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onResume();
+    }
 
     public void exibirMsg(View view){
         EditText txt = (EditText) findViewById(R.id.txt);
